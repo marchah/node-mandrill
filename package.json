@@ -1,0 +1,35 @@
+{
+  "name": "node-mandrill",
+  "version": "0.0.0",
+  "main": "./index.js",
+  "description": "Mandrill API",
+  "scripts": {
+    "test": "NODE_ENV=test NODE_PATH=./test node ./node_modules/mocha/bin/mocha --harmony "
+  },
+  "keywords": [
+    "node",
+    "mandrill",
+    "api"
+  ],
+  "author": "marchah <marchah.dev@gmail.com>",
+  "dependencies": {
+    "bluebird": "^3.4.3",
+    "lodash": "^4.15.0",
+    "mandrill-api": "^1.0.45"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^3.3.1",
+    "mocha": "^3.0.2",
+    "rewire": "^2.5.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/marchah/node-mandrill.git"
+  },
+  "bugs": {
+    "url": "https://github.com/marchah/node-mandrill/issues"
+  },
+  "homepage": "https://github.com/marchah/node-mandrill",
+  "license": "MIT"
+}
