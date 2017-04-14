@@ -38,9 +38,9 @@ Return a fulfilled promise with mandrill response. See Below for `options` schem
 ### Examples
 
 ```javascript
-const Mandrill = require('mandrill');
+const Mandrill = require('node-mandrill');
 
-const email = new Mandrill({
+const mailer = new Mandrill({
   MANDRILL_API_KEY: 'MY_MANDRILL_API_KEY',
   DEFAULT_FROM_EMAIL: 'no-reply@email.com',
   DEFAULT_FROM_NAME: 'no-reply',
@@ -51,7 +51,7 @@ const email = new Mandrill({
   },
 });
 
-email.send({
+mailer.send({
   to: 'hugo@email.com',
   cc: 'sam@email.com',                          // optionnal
   bcc: ['john@email.com', 'tracy@email.com'],   // optionnal
@@ -61,7 +61,7 @@ email.send({
 }); // => return Promise
 
 
-email.sendTemplate('PASSWORD_RESET_TEMPLATE', {
+mailer.sendTemplate('PASSWORD_RESET_TEMPLATE', {
   to: 'hugo@email.com',
   cc: 'sam@email.com',                              // optionnal
   bcc: ['john@email.com', 'tracy@email.com'],       // optionnal
@@ -77,12 +77,12 @@ email.sendTemplate('PASSWORD_RESET_TEMPLATE', {
 
 Send attachments
 ```javascript
-const Mandrill = require('mandrill');
+const Mandrill = require('node-mandrill');
 const fs = require('fs');
 
-const email = new Mandrill(); // using MANDRILL_API_KEY defined in environment variable
+const mailer = new Mandrill(); // using MANDRILL_API_KEY defined in environment variable
 
-email.send({
+mailer.send({
   to: ['hugo@email.com', 'sam@email.com']
   text: 'A file',
   attachments: [{
