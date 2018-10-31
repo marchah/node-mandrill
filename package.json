@@ -1,5 +1,5 @@
 {
-  "name": "node-mandrill",
+  "name": "node-mandrill-wrapper",
   "version": "0.0.0",
   "main": "./index.js",
   "description": "Mandrill API",
@@ -13,8 +13,8 @@
   ],
   "author": "marchah <marchah.dev@gmail.com>",
   "dependencies": {
-    "bluebird": "^3.4.3",
-    "lodash": "^4.15.0",
+    "bluebird": "^3.5.2",
+    "lodash": "^4.17.11",
     "mandrill-api": "^1.0.45"
   },
   "devDependencies": {
