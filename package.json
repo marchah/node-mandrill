@@ -13,13 +13,13 @@
   ],
   "author": "marchah <marchah.dev@gmail.com>",
   "dependencies": {
-    "bluebird": "^3.4.3",
-    "lodash": "^4.15.0",
+    "bluebird": "^3.7.2",
+    "lodash": "^4.17.15",
     "mandrill-api": "^1.0.45"
   },
   "devDependencies": {
     "chai": "^3.5.0",
-    "eslint": "^3.3.1",
+    "eslint": "^6.7.2",
     "mocha": "^3.0.2",
     "rewire": "^2.5.2"
   },
