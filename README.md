@@ -34,6 +34,7 @@ Return a fulfilled promise with mandrill response. See Below for `options` schem
 * `text` {String} email text (optional) (can be use only for `send`)
 * `global_merge_vars` {Object} global merge vars, (optional) (see [Mandrill documentation](https://mandrillapp.com/api/docs/messages.nodejs.html) for more informations on it)
 * `attachments` {Array} array of attachments files (optional)
+* `headers` {Object} optional extra headers to add to the message (most headers are allowed)
 
 ### Examples
 
